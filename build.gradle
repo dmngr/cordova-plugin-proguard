@@ -3,7 +3,7 @@ android {
     debug {
       minifyEnabled true
       shrinkResources true
-      resConfigs "en", "el"
+      resConfigs "en" "el"
       pseudoLocalesEnabled false
       zipAlignEnabled true
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'assets/www/proguard-custom.txt'
@@ -11,7 +11,7 @@ android {
     release {
       minifyEnabled true
       shrinkResources true
-      resConfigs "en", "el"
+      resConfigs "en" "el"
       pseudoLocalesEnabled false
       zipAlignEnabled true
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'assets/www/proguard-custom.txt'

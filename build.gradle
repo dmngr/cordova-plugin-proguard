@@ -1,19 +1,18 @@
 android {
+  defaultConfig {
+      resConfigs "en", "el"
+  }
   buildTypes {
     debug {
       minifyEnabled true
       shrinkResources true
-      resConfigs "en" "el"
       pseudoLocalesEnabled false
-      zipAlignEnabled true
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'assets/www/proguard-custom.txt'
     }
     release {
       minifyEnabled true
       shrinkResources true
-      resConfigs "en" "el"
       pseudoLocalesEnabled false
-      zipAlignEnabled true
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'assets/www/proguard-custom.txt'
     }
   }

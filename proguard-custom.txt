@@ -54,6 +54,7 @@
 -keepattributes SourceFile,LineNumberTable
 
 # Enable proguard with Cordova
+# Printing usage to [../platforms/android/app/build/outputs/mapping/debug/usage.txt] if you need to checkout the classes
 -keep public class org.apache.cordova.** { *; }
 -keep class com.ionicframework.cordova.** { *; }
 -keep class org.apache.cordova.** { *; }

@@ -55,6 +55,7 @@
 
 # Enable proguard with Cordova
 -keep public class org.apache.cordova.** { *; }
+-keep class com.ionicframework.cordova.** { *; }
 -keep class org.apache.cordova.** { *; }
 -keep public class * extends org.apache.cordova.CordovaPlugin
 

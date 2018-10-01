@@ -8,14 +8,14 @@ android {
       shrinkResources true
       pseudoLocalesEnabled false
       zipAlignEnabled true
-      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'src/main/assets/www/proguard-custom.txt'
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'src/main/assets/www/proguard-custom-rules.txt'
     }
     release {
       minifyEnabled true
       shrinkResources true
       pseudoLocalesEnabled false
       zipAlignEnabled true
-      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'src/main/assets/www/proguard-custom.txt'
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'src/main/assets/www/proguard-custom-rules.txt'
     }
   }
 }

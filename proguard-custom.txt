@@ -87,8 +87,8 @@
 -dontwarn com.google.common.**
 -dontwarn com.google.ads.**
 
-#This comes from the facebook plugin 
--keep class !com.google.zxing.**
+-keep public class com.google.android.gms.* { public *; }
+-dontwarn com.google.android.gms.**
 
 # apache.http
 -optimizations !class/merging/vertical*,!class/merging/horizontal*,!code/simplification/arithmetic,!field/*,!code/allocation/variable
@@ -119,18 +119,3 @@
 -dontwarn android.support.v4.**
 -dontwarn android.net.SSLCertificateSocketFactory
 -dontwarn android.net.http.*
-
-
-#facebook sdk
--keepclassmembers class * implements java.io.Serializable {
-    private static final java.io.ObjectStreamField[] serialPersistentFields;
-    private void writeObject(java.io.ObjectOutputStream);
-    private void readObject(java.io.ObjectInputStream);
-    java.lang.Object writeReplace();
-    java.lang.Object readResolve();
-}
-
--keepnames class com.facebook.FacebookActivity
--keepnames class com.facebook.CustomTabActivity
-
--keep class com.facebook.login.Login

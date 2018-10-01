@@ -88,7 +88,7 @@
 -dontwarn com.google.ads.**
 
 #This comes from the facebook plugin 
--dontwarn com.google.zxing.**
+-keep class !com.google.zxing.**
 
 # apache.http
 -optimizations !class/merging/vertical*,!class/merging/horizontal*,!code/simplification/arithmetic,!field/*,!code/allocation/variable

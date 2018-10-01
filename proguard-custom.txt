@@ -85,7 +85,10 @@
 # Enable proguard with Google libs
 -keep class com.google.** { *; }
 -dontwarn com.google.common.**
-#-dontwarn com.google.ads.**
+-dontwarn com.google.ads.**
+
+#This comes from the facebook plugin 
+-dontwarn com.google.zxing.**
 
 # apache.http
 -optimizations !class/merging/vertical*,!class/merging/horizontal*,!code/simplification/arithmetic,!field/*,!code/allocation/variable

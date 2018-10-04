@@ -61,7 +61,6 @@
 -keep public class * extends org.apache.cordova.CordovaPlugin
 
 -dontwarn io.branch.**
--keep class io.branch.**
 -dontwarn com.google.firebase.appindexing.** 
 -dontwarn com.crashlytics.android.answers.shim.** 
 -dontwarn com.android.installreferrer.api.**

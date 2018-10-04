@@ -57,6 +57,7 @@
 # Printing usage to [../platforms/android/app/build/outputs/mapping/debug/usage.txt] if you need to checkout the classes
 -keep public class org.apache.cordova.** { *; }
 -keep class com.ionicframework.cordova.webview.** { *; }
+-keep class io.branch.**
 -keep class org.apache.cordova.** { *; }
 -keep public class * extends org.apache.cordova.CordovaPlugin
 

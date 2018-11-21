@@ -128,6 +128,9 @@
     protected Object[][] getContents();
 }
 
+-keep class com.google.android.gms.ads.measurement.** { *; }
+-keep class com.google.android.gms.ads.appindexing.** { *; }
+
 -keep public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
     public static final *** NULL;
 }

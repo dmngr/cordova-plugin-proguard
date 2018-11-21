@@ -126,4 +126,12 @@
 #for admob
 -keep class com.google.android.gms.ads.measurement.** { *; }
 -keep class com.google.android.gms.ads.appindexing.** { *; }
--keep class com.google.firebase.messaging.** { *; }
+-keep public class com.google.firebase.messaging.** { *; }
+
+-keep public class com.google.firebase.analytics.FirebaseAnalytics {
+    public *;
+}
+
+-keep public class com.google.android.gms.measurement.AppMeasurement {
+    public *;
+}

@@ -123,35 +123,6 @@
 -dontwarn android.net.SSLCertificateSocketFactory
 -dontwarn android.net.http.*
 
-#for admob
--keep class com.google.android.gms.ads.measurement.** { *; }
--keep class com.google.android.gms.ads.appindexing.** { *; }
--keep public class com.google.firebase.messaging.** { *; }
-
--keep public class com.google.firebase.analytics.FirebaseAnalytics {
-    public *;
-}
-
--keep public class com.google.android.gms.measurement.AppMeasurement {
-    public *;
-}
-
--keep public class com.onesignal.ADMMessageHandler {
-    <fields>;
-    <methods>;
-}
-
--keep class com.onesignal.JobIntentService$* {
-    <fields>;
-    <methods>;
-}
-
--keep class com.onesignal.OneSignalUnityProxy {
-    <fields>;
-    <methods>;
-}
-
-
 -keep class com.google.ads.mediation.admob.AdMobAdapter {
     *;
 }

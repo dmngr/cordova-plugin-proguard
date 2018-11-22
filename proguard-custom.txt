@@ -151,35 +151,6 @@
     <methods>;
 }
 
-#admob
-
--keep class * extends com.google.android.gms.ads.mediation.MediationAdapter {
-    public <fields>;
-    public <methods>;
-}
-
--keep class * extends com.google.ads.mediation.MediationAdapter {
-    public <fields>;
-    public <methods>;
-}
-
--keep class * extends com.google.android.gms.ads.mediation.customevent.CustomEvent {
-    public <fields>;
-    public <methods>;
-}
-
--keep class * extends com.google.ads.mediation.customevent.CustomEvent {
-    public <fields>;
-    public <methods>;
-}
-
-
-
--keep public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
-    public static final *** NULL;
-}
-
-
 
 -keep class com.google.ads.mediation.admob.AdMobAdapter {
     *;

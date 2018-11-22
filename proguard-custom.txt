@@ -134,3 +134,41 @@
 -keep public class com.google.android.gms.measurement.AppMeasurement {
     public *;
 }
+
+-keep public class com.onesignal.ADMMessageHandler {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.onesignal.JobIntentService$* {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.onesignal.OneSignalUnityProxy {
+    <fields>;
+    <methods>;
+}
+
+#admob
+
+-keep class * extends com.google.android.gms.ads.mediation.MediationAdapter {
+    public <fields>;
+    public <methods>;
+}
+
+-keep class * extends com.google.ads.mediation.MediationAdapter {
+    public <fields>;
+    public <methods>;
+}
+
+-keep class * extends com.google.android.gms.ads.mediation.customevent.CustomEvent {
+    public <fields>;
+    public <methods>;
+}
+
+-keep class * extends com.google.ads.mediation.customevent.CustomEvent {
+    public <fields>;
+    public <methods>;
+}
+

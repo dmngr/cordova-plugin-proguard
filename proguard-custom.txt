@@ -61,7 +61,7 @@
 -keep public class * extends org.apache.cordova.CordovaPlugin
 
 -dontwarn io.branch.**
--dontwarn com.google.firebase.appindexing.** 
+# -dontwarn com.google.firebase.appindexing.** 
 -dontwarn com.crashlytics.android.answers.shim.** 
 -dontwarn com.android.installreferrer.api.**
 -keep class com.google.android.gms.ads.** { *; }
@@ -91,7 +91,6 @@
 # Enable proguard with Google libs
 -keep class com.google.** { *; }
 -dontwarn com.google.common.**
--dontwarn com.google.ads.**
 
 # apache.http
 -optimizations !class/merging/vertical*,!class/merging/horizontal*,!code/simplification/arithmetic,!field/*,!code/allocation/variable

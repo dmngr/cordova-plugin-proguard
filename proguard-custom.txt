@@ -178,3 +178,13 @@
 -keep public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
     public static final *** NULL;
 }
+
+
+
+-keep class com.google.ads.mediation.admob.AdMobAdapter {
+    *;
+}
+
+-keep class com.google.ads.mediation.AdUrlAdapter {
+    *;
+}

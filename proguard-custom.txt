@@ -59,19 +59,35 @@
 -keep class org.apache.cordova.** { *; }
 -keep public class * extends org.apache.cordova.CordovaPlugin
 
+
+#FOR FIREBASE
+-keep class com.firebase.** { *; }
+-keep class org.apache.** { *; }
+-keepnames class com.fasterxml.jackson.** { *; }
+-keepnames class javax.servlet.** { *; }
+-keepnames class org.ietf.jgss.** { *; }
+-dontwarn org.w3c.dom.**
+-dontwarn org.joda.time.**
+-dontwarn org.shaded.apache.**
+-dontwarn org.ietf.jgss.**
+
+# Only necessary if you downloaded the SDK jar directly instead of from maven.
+-keep class com.shaded.fasterxml.jackson.** { *; }
+
 # Add this global rule
 -keepattributes Signature
 
 -keepclassmembers class gr.deliverymanager.models.** {
     *;
 }
--dontwarn com.google.firebase.platforminfo.KotlinDetector
 
--keep class com.facebook.** { *; }
 
 -keep class com.google.android.gsm.** { *; }
+-keep class com.google.android.gms.ads.measurement.** { *; }
+-keep class com.google.android.gms.ads.appindexing.** { *; }
 
 -dontwarn io.branch.**
+
 -dontwarn com.google.firebase.appindexing.** 
 -dontwarn com.crashlytics.android.answers.shim.** 
 -dontwarn com.android.installreferrer.api.**
@@ -139,6 +155,7 @@
 -keep class com.ionicframework.cordova.webview.*
 
 
+##### FOR ONESINGAL
 -dontwarn com.onesignal.**
 
 # These 2 methods are called with reflection.

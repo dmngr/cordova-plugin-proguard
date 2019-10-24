@@ -60,6 +60,7 @@
 -keep public class * extends org.apache.cordova.CordovaPlugin
 
 -keep class com.firebase.** { *; }
+-dontwarn com.fasterxml.**
 -dontwarn io.branch.**
 -dontwarn com.google.firebase.appindexing.** 
 -dontwarn com.crashlytics.android.answers.shim.** 

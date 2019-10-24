@@ -69,6 +69,8 @@
 -dontwarn org.shaded.apache.**
 -dontwarn org.ietf.jgss.**
 
+-keep class com.facebook.** { *; }
+
 -dontwarn io.branch.**
 -dontwarn com.google.firebase.appindexing.** 
 -dontwarn com.crashlytics.android.answers.shim.** 

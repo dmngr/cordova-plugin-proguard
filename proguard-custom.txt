@@ -56,10 +56,10 @@
 # Enable proguard with Cordova
 # Printing usage to [../platforms/android/app/build/outputs/mapping/debug/usage.txt] if you need to checkout the classes
 -keep public class org.apache.cordova.** { *; }
--keep class com.ionicframework.cordova.webview.** { *; }
 -keep class org.apache.cordova.** { *; }
 -keep public class * extends org.apache.cordova.CordovaPlugin
 
+-keep class com.firebase.** { *; }
 -dontwarn io.branch.**
 -dontwarn com.google.firebase.appindexing.** 
 -dontwarn com.crashlytics.android.answers.shim.** 
@@ -122,3 +122,7 @@
 -dontwarn android.support.v4.**
 -dontwarn android.net.SSLCertificateSocketFactory
 -dontwarn android.net.http.*
+
+# These clases contain references to cordova webView
+-keep class com.ionicframework.cordova.webview.** {*; }
+-keep class com.ionicframework.cordova.webview.*
